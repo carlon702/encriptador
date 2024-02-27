@@ -11,32 +11,30 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <img class="nav__logo" src="public/images/alura.svg" alt="alura logo">
-        </nav>
-        
+            <img class="logo" src="public/images/alura.svg" alt="alura logo">
     </header>
     <main>
-        <div class="main">
-        <div class="main__text-area">
-        <textarea class="main__text-area__input" type="text" placeholder="Ingrese el texto aqui"></textarea>
+        <section class="main">
+        <textarea class="main__text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        
+        <div class="main__buttons">
+            <h6 class="main__info"> &#128712 Solo letras minusculas y sin acento</h6>
+            <div class="button-container">
+            <button class="main__buttons__encript" onclick="encryptButton()">Encriptar</button>
+            <button class="main__buttons__decript" onclick="decryptButton()">Desencriptar</button>
         </div>
-
-        <div class="main__buttons-info">
-        <p class="main__buttons-info__info"> &#128712 Solo letras minusculas y sin acento</p>
-        <div class="main__buttons-info__buttons">
-            <button class="main__buttons-info__buttons__encript">Encriptar</button>
-            <button class="main__buttons-info__buttons__decript">Desencriptar</button>
         </div>
-    </div>
-        </div>
-        <div class="output">
-            <div class="output__message">
-                <p class="output__message__title">Ningun mensaje fue encontrado</p>
-                <p class="output__message__content">ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-        </div>
+</section>
+        <section class="output">
+            <textarea class="output__message" cols="20" rows="10"></textarea>
+            <h2 class="output-info1">Ningun mensaje fue encontrado</h2>
+            <h6 class="output-info2">Ingresa el texto que desees encriptar o Desencriptar</h4>
+            
+                <button class="output__button-copy" onclick="copyText()">Copiar</button>
+            
+        </section>
     </main>
-    <footer></footer>
+    <script src="/public/js/script.js"></script>
 </body>
+
 </html>
